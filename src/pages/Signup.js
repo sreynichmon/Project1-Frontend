@@ -5,7 +5,7 @@ import Meta from '../components/Meta';
 const Signup = () => {
   return (
     <>
-      <Meta title={"Sig Up"} />
+      <Meta title={"Sign Up"} />
       <BreadCrumb title="Sign Up" />
 
       <div className='login-wrapper py-5 home-wrapper-2'>
