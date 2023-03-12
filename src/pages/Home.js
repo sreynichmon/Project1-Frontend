@@ -1,14 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
+import Container from '../components/Container';
 import ProductCard from '../components/ProductCard';
 
 const Home  = () => {
   return (
     <>
-      
-      <section className='home-wrapper-2 py-5'>
-        <div className='container-xxl'>
+      <Container class1='home-wrapper-2 py-5'>
           <div className='row'>
             <div className='col-12'>
               <div className='categories d-flex justify-content-between flex-wrap align-items-center'>
@@ -17,7 +15,7 @@ const Home  = () => {
                     <h6>Headphones</h6>
                     <p>10 Items</p>
                   </div>
-                  <img src='images/headphone.jpg' alt='camera' />
+                  <img src='images/headphone.jpg' alt='headphone' />
                 </div>
                 <div className='d-flex gap align-items-center'>
                   <div>
@@ -71,10 +69,8 @@ const Home  = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className='marque-wrapper py-5'>
-        <div className='container-xxl'>
+      </Container>
+      <Container class1='marque-wrapper py-5'>
           <div className='row'>
             <div className='col-12'>
               <div className='marquee-inner-wrapper bg-white p-3 card-wrapper'>
@@ -110,10 +106,8 @@ const Home  = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className='bestpro-wrapper py-5 home-wrapper-2'>
-        <div className='container-xxl'>
+      </Container>
+      <Container class1='bestpro-wrapper py-5 home-wrapper-2'>
           <div className='row'>
             <div className='col-12'>
               <h3 className='section-heading'>Best Selling Products</h3>
@@ -127,8 +121,7 @@ const Home  = () => {
             <ProductCard />
             <ProductCard />
           </div>
-        </div>
-      </section>
+      </Container>
     </>
   )
 }

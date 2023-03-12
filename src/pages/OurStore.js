@@ -38,7 +38,7 @@ const OurStore = () => {
                                             value="" 
                                             id="" 
                                         />
-                                        <label className='form-check-label' htmlFor="">
+                                        <label className='form-check-label' html="">
                                             In Stock (1)
                                         </label>
                                     </div>
@@ -49,7 +49,7 @@ const OurStore = () => {
                                             value="" 
                                             id="" 
                                         />
-                                        <label className='form-check-label' htmlFor="">
+                                        <label className='form-check-label' html="">
                                             Out of Stock (0)
                                         </label>
                                     </div>
@@ -88,7 +88,7 @@ const OurStore = () => {
                                             value="" 
                                             id="color-1" 
                                         />
-                                        <label className='form-check-label' htmlFor="color-1">
+                                        <label className='form-check-label' html="color-1">
                                             S (2)
                                         </label>
                                     </div>
@@ -99,7 +99,7 @@ const OurStore = () => {
                                             value="" 
                                             id="color-2" 
                                         />
-                                        <label className='form-check-label' htmlFor="color-2">
+                                        <label className='form-check-label' html="color-2">
                                             M (2)
                                         </label>
                                     </div>
@@ -110,7 +110,7 @@ const OurStore = () => {
                                             value="" 
                                             id="color-3" 
                                         />
-                                        <label className='form-check-label' htmlFor="color-3">
+                                        <label className='form-check-label' html="color-3">
                                             L (2)
                                         </label>
                                     </div>
@@ -144,7 +144,7 @@ const OurStore = () => {
                                     <p className='mb-0 d-block' style={{ width: "100px"}}> Sort By:</p>
                                     <select name='' className='form-control form-select' id="">
                                         <option value="manual">Featured</option>
-                                        <option value="best-selling" selected="selected">
+                                        <option value="best-selling" select="select">
                                             Best Selling
                                         </option>
                                         <option value="title-ascending">Alphabetically, A-Z</option>

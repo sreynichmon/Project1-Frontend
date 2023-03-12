@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BreadCrumb from '../components/BreadCrumb';
+import CustomerInput from '../components/CustomerInput';
 import Meta from '../components/Meta';
 
 const Login = () => {
@@ -15,28 +16,14 @@ const Login = () => {
                     <div className='auth-card'>
                         <h3 className='text-center mb-3'>Login</h3>
                         <form action='' className='d-flex flex-column gap-15'>
-                            <div>
-                                <input
-                                    type='email'
-                                    name='email'
-                                    placeholder='Email'
-                                    className='form-control' 
-                                />
-                            </div>
-                            <div className='mt-1'>
-                                <input 
-                                    type='password'
-                                    name='password'
-                                    placeholder='Password'
-                                    className='form-control'
-                                />
-                            </div>
+                            <CustomerInput type='email' name='email' placeholder='Email'/>
+                            <CustomerInput type='password' name='password' placeholder='Password' />
                             <div>
                                 <Link to="/Forgotpassword">Forgot Password?</Link>
 
                                 <div className='mt-3 d-flex justify-content-center gap-15 align-items-center'>
-                                <button type="button" class="btn btn-secondary btn-sm">Login</button>
-                                <a class="btn btn-secondary btn-sm" href="/Signup" role="button">Sign Up</a>
+                                <button type="button" className="btn btn-secondary btn-sm">Login</button>
+                                <a className="btn btn-secondary btn-sm" href="/Signup" role="button">Sign Up</a>
                                 </div>
                             </div>
                         </form>

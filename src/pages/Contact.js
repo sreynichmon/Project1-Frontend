@@ -1,26 +1,27 @@
 import React from 'react';
 import BreadCrumb from "../components/BreadCrumb";
+
 import Meta from "../components/Meta";
 import { AiOutlineHome, AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall, BiInfoCircle } from "react-icons/bi"
+import Container from '../components/Container';
 
 const Contact = () => {
   return (
     <>
       <Meta title={"Contact Us "} />
       <BreadCrumb title="Contact Us " />
-      <div className='contact-wrapper py-5 home-wrapper-2'>
-        <div className='container-xxl'>
+      <Container class1='contact-wrapper py-5 home-wrapper-2'>
           <div className='row'>
             <div className='col-12'>
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7706603336374!2d104.88850131459685!3d11.568291891787181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519fe4077d69%3A0x20138e822e434660!2sRUPP%20(Royal%20University%20of%20Phnom%20Penh)!5e0!3m2!1sen!2skh!4v1676961905689!5m2!1sen!2skh" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250151.45210774185!2d104.75009928279677!3d11.579330574244747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0x9c010ee85ab525bb!2sPhnom%20Penh!5e0!3m2!1sen!2skh!4v1678611947258!5m2!1sen!2skh" 
                 width="600" 
                 height="450" 
                 className='border-0 w-100'
-                allowfullscreen="" 
+                allowFullScreen="" 
                 loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
+                referrerPolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
             <div className='col-12 mt-5'>
@@ -60,7 +61,7 @@ const Contact = () => {
                       ></textarea>
                     </div>
                     <div>
-                    <button type="button" class="btn btn-secondary btn-lg">Send</button>
+                    <button type="button" className="btn btn-secondary btn-lg">Send</button>
                     </div>
                   </form>
                 </div>
@@ -96,8 +97,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+      </Container>
     </>
   )
 }

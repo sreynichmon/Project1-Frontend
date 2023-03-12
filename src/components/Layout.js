@@ -9,7 +9,7 @@
         <Outlet />
         <Footer />
      </>
-   )
- }
+   );
+ };
  
  export default Layout;
